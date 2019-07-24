@@ -28,10 +28,12 @@ public class StepDefinitions {
 	    RestTemplate restApi = new RestTemplate();
 	    result= restApi.getForObject(url, Double.class);
 	}
+	//result
 
 	@Then("expected result {double}")
 	public void expectedResult(Double expectedResult) {
 	   assertEquals(expectedResult,result,0.001); 
 
 	}
+	// nothing changed
 }

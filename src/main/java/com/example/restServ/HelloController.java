@@ -21,4 +21,11 @@ public class HelloController {
 	}
 	//master changed
 	
+	@GetMapping("sub")
+	@ResponseBody
+	public double sub(@RequestParam double first, @RequestParam double second) {
+		return first - second;
+	}
+	
+	
 }
