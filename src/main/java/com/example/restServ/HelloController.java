@@ -19,5 +19,6 @@ public class HelloController {
 	public double add(@RequestParam double first, @RequestParam double second) {
 		return first + second;
 	}
+	//master changed
 	
 }
