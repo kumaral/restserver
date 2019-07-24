@@ -20,4 +20,11 @@ public class HelloController {
 		return first + second;
 	}
 	
+	@GetMapping("sub")
+	@ResponseBody
+	public double sub(@RequestParam double first, @RequestParam double second) {
+		return first - second;
+	}
+	
+	
 }
