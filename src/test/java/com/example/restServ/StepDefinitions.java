@@ -28,6 +28,7 @@ public class StepDefinitions {
 	    RestTemplate restApi = new RestTemplate();
 	    result= restApi.getForObject(url, Double.class);
 	}
+	//result
 
 	@Then("expected result {double}")
 	public void expectedResult(Double expectedResult) {
